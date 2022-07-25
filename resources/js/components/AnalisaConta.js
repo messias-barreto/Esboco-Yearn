@@ -9,7 +9,6 @@ export default class AnalisaConta extends Component{
             nome: '',
             perfil: ''
         }
-       var contas = [];
     }
 
     drop(ev) {
@@ -33,7 +32,11 @@ export default class AnalisaConta extends Component{
     render(){
         return(
             <div className="col-md-4 text-center">
-                <ul className="list-group" onDrop={this.drop.bind(this)} onDragOver={this.dragOver.bind(this)} className={this.props.className}>
+                <ul className="list-group"
+                        onDrop={this.drop.bind(this)}
+                        onDragOver={this.dragOver.bind(this)}
+                        className={this.props.className}>
+
                     <li className="list-group-item">Contas</li>
                     { this.props.children }
                 </ul>

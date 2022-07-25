@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import estiloCard from './css/estilocard.css';
+import React, { Component } from 'react';
 
 export default class Card extends Component {
     excluirCard(){
@@ -13,10 +12,6 @@ export default class Card extends Component {
         const conta = e.target;
         e.dataTransfer.setData('id', conta.id);
         e.dataTransfer.setData('tipo_conta', this.props.tipo_conta);
-
-        //setTimeout(() => {
-          //  conta.style.display = 'none'
-        //}, 0)
     }
 
     dropOver(e){
@@ -26,16 +21,16 @@ export default class Card extends Component {
     render(){
         return(
             <>
-                <div className="card drag1" id={this.props.id} 
-                                            onDragStart={this.arrastar.bind(this)} 
-                                            onDragOver={this.dropOver.bind(this)} 
+                <div className="card drag1" id={this.props.id}
+                                            onDragStart={this.arrastar.bind(this)}
+                                            onDragOver={this.dropOver.bind(this)}
                                             className={this.props.className}
                                             draggable={this.props.draggable}>
 
                     <div className="card-body" id="card">
                         <h5 className="card-title">{this.props.nome}</h5>
                     </div>
-                    
+
                 </div>
             </>
         );

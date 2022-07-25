@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import eGuardaPerfil from './css/estiloGuardaPerfil.css';
-import Card from './Card';
 
 export default class GuardaPerfil extends Component{
     render(){

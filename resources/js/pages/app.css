@@ -1,0 +1,37 @@
+.title {
+    color: #fff;
+    font-size: garamond;
+}
+
+.perfil {
+    flex: 1;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.drag {
+    background-color: #0000FF	;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-body {
+    background-color: #fff;
+}
+
+.card-title {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card-header {
+    font-size: 20px;
+    background-color: #0000FF;
+    color: #fff;
+}
+
+.list-group-item {
+    font-size: 25px;
+    font-family: Verdana;
+}
